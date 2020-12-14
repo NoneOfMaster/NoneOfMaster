@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .prompt {
+        color: rgb(74, 254, 254);
+      }
+      .text {
+        background-color: rgb(36, 41, 46);
+        padding: 10px;
+        color: #fff;
+        /* font-family: 'Consolas', 'Courier New', 'Courier'; */
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  </head>
+
+  <body>
+    <div class="text">
+      <span class="prompt">➜</span> <span id="typed"></span>
+    </div>
+    <script>
+      const typed = new Typed('#typed', {
+        strings: [
+          '^200 Hello, wul',
+          'Hello, wolr',
+          "<i>Hello</i>, world. I'm Russell. 👨‍🌾",
+        ],
+        typeSpeed: 35,
+        smartBackspacing: true,
+      });
+    </script>
+  </body>
+</html>
